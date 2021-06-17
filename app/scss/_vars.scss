@@ -1,36 +1,24 @@
 $default: #7b7b7b;
-$title: #1f2044;  
-$subtitle: #436372; 
+$title: #1f2044;
+$subtitle: #436372;
+$text: #243f4d;
 $accent: #04415c;
 $bg: #fcd7b6;
+$bg-blue: #a3bbc8;
 
-%rubik-400{
-    font-family: 'Rubik-Regular', sans-serif;
-    font-weight: 400;
-}
-
-%rubik-500{
-    font-family: 'Rubik-Medium', sans-serif;
-    font-weight: 500;
-}
-
-%dmsans-400{
-    font-family: 'DMSans-Regular', sans-serif;
-    font-weight: 400;
-}
-
-%dmsans-700{
-    font-family: 'DMSans-Bold', sans-serif;
-    font-weight: 700;
-}
-
-%btn{
+%main-button {
     background-color: #a3bbc8;
     color: #fff;
-    @extend %rubik-400;
-    font-size: 15px;
     line-height: 1;
     padding: 24px 20px 20px 30px;
-    outline: none;
+    outline: transparent;
     border: none;
+}
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
 }
